@@ -1,1 +1,277 @@
-There is going to be a page here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splat, Click, Asset | IEEE CoG 2026</title>
+    <style>
+        :root {
+            /* Dark Mode Color Palette */
+            --primary-color: #3b82f6; /* Bright blue for links and accents */
+            --primary-hover: #60a5fa;
+            --bg-color: #0f172a;      /* Deep slate background */
+            --text-main: #f8fafc;     /* Crisp white text */
+            --text-muted: #94a3b8;    /* Soft gray for secondary text */
+            --card-bg: #1e293b;       /* Slightly lighter slate for content cards */
+            --border-color: #334155;  /* Subtle borders */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            /* Cool light-to-blue gradient for the title */
+            background: linear-gradient(90deg, #f8fafc, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .conference {
+            font-size: 1.2rem;
+            color: var(--primary-hover);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .authors {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .authors a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .authors a:hover {
+            color: var(--primary-hover);
+        }
+
+        .affiliations {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        /* Buttons */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--border-color);
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background-color: var(--primary-color);
+            color: #ffffff;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Teaser Image */
+        .teaser {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+        }
+
+        /* Content Sections */
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: var(--text-main);
+        }
+
+        /* Code & BibTeX formatting */
+        code {
+            background-color: #020617;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            color: var(--primary-hover);
+        }
+
+        pre {
+            background-color: #020617; /* Very dark background for code block */
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Splat, Click, Asset: An Artist-Centric Segmentation Pipeline for Gaussian Splats</h1>
+            <div class="conference">Accepted to IEEE Conference on Games (CoG) 2026 | Madrid, Spain</div>
+            
+            <div class="authors">
+                <a href="https://danialbarazandeh.de/">Danial Barazandeh</a>, 
+                <a href="https://cgvr.cs.uni-bremen.de/people/">Alireza Dehghanpour</a>, 
+                <a href="https://cgvr.cs.uni-bremen.de/people/">Gabriel Zachmann</a>
+            </div>
+            
+            <div class="affiliations">
+                University of Bremen (CGVR), Germany
+            </div>
+
+            <div class="links">
+                <a href="#" class="btn">📄 Paper (PDF)</a>
+                <a href="https://danial-barazandeh.github.io/Splat-Click-Asset/" class="btn">💻 GitHub Code</a>
+            </div>
+        </header>
+
+        <!-- Teaser Section -->
+        <div>
+            <!-- Note: Make sure to place your Teaser.png in the same directory, or update this path -->
+            <img src="figures/TeaserDark2.png" alt="Splat, Click, Asset Teaser Image" class="teaser" onerror="this.src='https://via.placeholder.com/900x400/1e293b/f8fafc?text=Insert+Teaser.png+Here'">
+            <div class="caption">
+                <strong>Figure 1:</strong> The Splat, Click, Asset workflow in action. Our method successfully isolates an object from a complex background and decomposes it into its functional, semantic components in minutes.
+            </div>
+        </div>
+
+        <!-- Abstract Section -->
+        <section>
+            <h2>Abstract</h2>
+            <p>
+ 3D Gaussian Splatting (3DGS) has revolutionized
+real-time rendering, but converting these Gaussians into interac-
+tive game assets remains a significant challenge. Recent methods
+attempt to address this by distilling semantic features during the
+computationally expensive training phase. However, these “black-
+box” approaches are pipeline-dependent and effectively remove
+the artist from the loop by treating asset definition as a rigid
+classification problem rather than a creative decision.
+
+</p>
+
+<p>
+In this
+paper, we propose a model-agnostic, artist-centric segmentation
+tool that restores control to artists and game developers. Unlike
+prior work, our approach operates directly on pre-compiled
+3DGS assets, leveraging fast GPU-accelerated geometric cluster-
+ing as a “co-pilot” for the user. We demonstrate that this strong
+clustering initialization enables users to interactively isolate,
+clean, and extract complex objects in minutes (∼3 minutes in our
+study). Crucially, this approach empowers users to semantically
+decompose objects into their functional components, expanding
+the possibilities for interactive game design. Furthermore, we
+validate the system’s efficiency and user-friendliness through a
+formal user study, achieving a System Usability Scale (SUS)
+score of 70, demonstrating above-average usability for an early-
+stage prototype. Ultimately, we present an interactive workflow
+that prioritizes rapid iteration, universal compatibility, and the
+validation of human agency as the ultimate arbiter of asset
+definition.
+            </p>
+        </section>
+
+        <!-- Features/Methodology Section -->
+        <section>
+            <h2>Core Contributions</h2>
+            <ul>
+                <li><strong>Interactive, Model-Agnostic Pipeline:</strong> A post-hoc segmentation workflow operating directly on standard <code>.ply</code> files without expensive retraining.</li>
+                <li><strong>Artist-Centric Control:</strong> Combines GPU-accelerated clustering (K-Means, HDBSCAN) with explicit 3D bounding box manipulation.</li>
+                <li><strong>Hierarchical Outlier Removal:</strong> Clean up floaters and artifacts using interactive Statistical Outlier Removal (SOR) and density-based filtering.</li>
+                <li><strong>Game-Ready Export:</strong> Decompose scenes into semantically meaningful sub-components ready for physics simulation and collision meshes.</li>
+            </ul>
+        </section>
+
+        <!-- BibTeX Section -->
+        <section>
+            <h2>Citation</h2>
+            <p>If you find our work useful in your research, please consider citing:</p>
+            <pre><code>@inproceedings{barazandeh2026splat,
+  title={Splat, Click, Asset: An Artist-Centric Segmentation Pipeline for Gaussian Splats},
+  author={Barazandeh, Danial and Dehghanpour, Alireza and Zachmann, Gabriel},
+  booktitle={2026 IEEE Conference on Games (CoG)},
+  year={2026},
+  organization={IEEE},
+  note={To appear}
+}</code></pre>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Danial Barazandeh. Page template created for IEEE CoG 2026.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
